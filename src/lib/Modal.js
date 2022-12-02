@@ -1,3 +1,5 @@
+import React from 'react'
+
 function Modal(props) {
     // Change display modal
     const showHideClassName = props.isModalOn
@@ -15,7 +17,6 @@ function Modal(props) {
           <p className="modal_text">{props.content}</p>
           <p className="button_close_container">
             <i
-              type="button"
               onClick={props.closeModal}
               className="close_modal fa fa-2x fa-times-circle-o"
               aria-hidden="true"
