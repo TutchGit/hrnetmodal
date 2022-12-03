@@ -1,12 +1,22 @@
 import React from 'react'
 
 function Modal(props) {
-    // Change display modal
+
+  /**
+   * ! Props needed :
+   * 
+   * * content : display modal text {string}
+   * * isModal : change className so you can on/off with display: flex / display: none {boolean}
+   * * closeModal : function used in parent to change isModal {object}
+   * 
+   */
+
+    // Change className for display modal
     const showHideClassName = props.isModalOn
       ? "modal display-flex"
       : "modal display-none";
   
-    // Change display container modal
+    // Change className for display container modal
     const showHideContainerClassName = props.isModalOn
       ? "display-block"
       : "display-none";
